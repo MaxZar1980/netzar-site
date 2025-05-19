@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Netzar Consulting</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -27,11 +27,29 @@
       margin: auto;
       padding: 2rem;
     }
+    h1, h2 {
+      color: #0f2d3f;
+    }
     .footer {
       text-align: center;
       font-size: 0.8rem;
       padding: 2rem;
       color: #888;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    .contact, .about {
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -41,15 +59,30 @@
     <h1>Netzar Consulting</h1>
     <p>Smarter Software. Delivered Lean.</p>
   </header>
+
   <div class="section">
-    <h2>About</h2>
-    <p>We deliver modern, AI-augmented software solutions and consulting for public sector and SME clients across the UK and Europe.</p>
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card"><strong>Web Development</strong><br>Responsive modern websites</div>
+      <div class="card"><strong>Data Platforms</strong><br>Dashboards, ETL & BI tools</div>
+      <div class="card"><strong>Software QA</strong><br>Manual & automated testing</div>
+      <div class="card"><strong>API Integration</strong><br>Secure third-party connections</div>
+      <div class="card"><strong>AI-Augmented Delivery</strong><br>GPT-powered automation</div>
+      <div class="card"><strong>DevOps Setup</strong><br>CI/CD & modern deployments</div>
+    </div>
+
+    <div class="about">
+      <h2>About</h2>
+      <p>We are a UK-based consultancy helping public sector and SME clients deliver modern, AI-enhanced digital platforms using trusted nearshore teams and smart workflows.</p>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: contact@netzar.co.uk<br>
+      Address: 123 Innovation Street, London, UK</p>
+    </div>
   </div>
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email: contact@netzar.co.uk</p>
-    <p>Address: 123 Innovation Street, London, UK</p>
-  </div>
+
   <div class="footer">
     &copy; 2025 Netzar Consulting. All rights reserved.
   </div>
